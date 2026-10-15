@@ -30,7 +30,12 @@ def main(argv: list[str] | None = None) -> int:
             location = finding.location.to_dict() if finding.location else None
             where = f"{location['file']}:{location['line']}" if location else "<unknown>"
             details = ", ".join(filter(None, (finding.template, finding.variable)))
-            print(f"{finding.severity.value.upper()}: {where}: {details}: {finding.reason}")
+            render_location = finding.related_locations[0] if finding.related_locations else finding.location
+            render_where = (f"{render_location.file}:{render_location.line}"
+                            if render_location else "<unknown>")
+            owner = finding.route or finding.function or "<unknown>"
+            print(f"{finding.severity.value.upper()}: {where}: {details}: {finding.reason} "
+                  f"[route/function={owner}, render={render_where}]")
         summary = result.to_dict(strict=args.strict)["summary"]
         print(f"{summary['errors']} error(s), {summary['warnings']} warning(s), {summary['cant_verify']} can't verify")
     return result.exit_code(strict=args.strict)

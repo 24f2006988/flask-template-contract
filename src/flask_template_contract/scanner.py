@@ -245,4 +245,14 @@ def scan_project(root: Path) -> PythonScan:
         ordered = list(dict.fromkeys(ordered))
         roots.append((name, tuple(ordered)))
     sites = [site for site in sites if not (site.function in wrappers and site.function)]
+    if len(apps) > 1:
+        sites = [RenderSite(site.location, function=site.function, routes=site.routes,
+                            app=None, blueprint=site.blueprint,
+                            template_candidates=site.template_candidates,
+                            explicit_kwargs=site.explicit_kwargs,
+                            explicit_keyword_locations=site.explicit_keyword_locations,
+                            gaps=site.gaps + (AnalysisGap(
+                                FindingCode.AMBIGUOUS_ROOTS, site.location,
+                                "Multiple independent Flask app scopes make render ownership unresolved."),))
+                 for site in sites]
     return PythonScan(tuple(sites), tuple(providers), tuple(gaps), tuple(roots), tuple(apps))

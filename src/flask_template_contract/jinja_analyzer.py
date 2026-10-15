@@ -204,7 +204,8 @@ class _Analysis:
 
     def stack_names(self): return tuple(self.rel(p) for p in self.stack)
 
-    def walk(self, path: Path, chain: tuple[str, ...], overrides: dict[str, nodes.Block] | None = None) -> None:
+    def walk(self, path: Path, chain: tuple[str, ...], overrides: dict[str, nodes.Block] | None = None,
+             initial: Iterable[str] = ()) -> None:
         path = path.resolve()
         if path in self.stack:
             self.gaps.append(AnalysisGap(FindingCode.CYCLE, SourceLocation(self.rel(path), 1), "template dependency cycle")); return
@@ -218,7 +219,7 @@ class _Analysis:
         self.parent = None
         blocks = {b.name: b for b in tree.find_all(nodes.Block)}
         has_extends = any(isinstance(item, nodes.Extends) for item in tree.body)
-        walker = _Walker(self, chain)
+        walker = _Walker(self, chain, initial)
         for child in tree.body:
             if isinstance(child, nodes.Extends): self.parent = child; continue
             if has_extends and isinstance(child, nodes.Block): continue
@@ -241,7 +242,9 @@ class _Analysis:
                 self.dependencies.append(parent_name)
                 if len(matches) > 1: self.gaps.append(AnalysisGap(FindingCode.AMBIGUOUS_ROOTS, self.location(self.parent.lineno), "ambiguous parent template"))
                 elif not matches: self.gaps.append(AnalysisGap(FindingCode.MISSING_TEMPLATE, self.location(self.parent.lineno), f"template {parent_name!r} was not found"))
-                else: self.walk(matches[0], (parent_name,) + chain, blocks)
+                else:
+                    inherited = set(walker.scopes[0]) - _GLOBALS - {"self", "super"}
+                    self.walk(matches[0], (parent_name,) + chain, blocks, inherited)
         self.stack.pop()
 
     def result(self, path: Path) -> TemplateSummary:

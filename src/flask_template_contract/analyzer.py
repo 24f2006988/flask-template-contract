@@ -56,6 +56,8 @@ def analyze(root: Path, strict: bool = False) -> AnalysisResult:
         for gap in site.gaps:
             variable = gap.reason.split(": ", 1)[1] if gap.code == FindingCode.BRANCH_FLOW and ": " in gap.reason else None
             findings.append(_gap_finding(gap, site, template=template, variable=variable))
+        if any(gap.code == FindingCode.AMBIGUOUS_ROOTS for gap in site.gaps):
+            continue
         if not site.template_candidates:
             continue
         roots = _scope_roots(scan, site, root)
@@ -101,6 +103,7 @@ def analyze(root: Path, strict: bool = False) -> AnalysisResult:
                 findings.append(Finding(FindingCode.UNUSED_VARIABLE, Severity.WARNING, location,
                     site.function, _route(site), template=candidate_name, variable=variable,
                     reason=f"Render data {variable} is supplied explicitly but is not read by {candidate_name}.",
+                    related_locations=(site.location,),
                     dependency_chain=(candidate_name,)))
 
     if not scan.render_sites and not scan.app_scopes and not scan.gaps:

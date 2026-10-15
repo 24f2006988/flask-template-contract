@@ -51,18 +51,19 @@ docker build -t flask-template-contract . && docker run --rm --network none flas
 ```
 
 The build installs dependencies; container execution requires no network and
-does not sync or download anything. Docker has not yet been verified in the
-development sandbox because Docker is unavailable there.
+does not sync or download anything. This exact command was verified on a real
+Docker host running Windows 11 with Docker Desktop and the WSL 2 backend:
+
+```text
+75 passed in 0.14s
+```
 
 The Docker build first installs locked dependencies (including Hatchling), then
 builds a non-editable package with build isolation disabled so the locked backend
 environment is reused. It uses no host virtual environment or external files.
-The Python image tag was confirmed in Docker Hub's public tag API; fetching the
-uv GHCR manifest without registry authentication returned 401, so that image pull
-is still unverified. Image tags are version-pinned, not digest-pinned. A real
-Docker build must still verify image availability, registry access, and wheels
-for the target architecture. No compiler or other extra system package is
-currently needed for the tested Linux environment.
+The Python image tag was confirmed in Docker Hub's public tag API. Image tags
+are version-pinned, not digest-pinned. The verified host needed no compiler or
+other extra system package.
 
 ## Run and deploy
 

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling==1.32.4"]
+build-backend = "hatchling.build"
+
+[project]
+name = "flask-template-contract"
+version = "0.1.0"
+description = "Static Flask-to-Jinja template context contract checker (under development)."
+readme = "README.md"
+requires-python = ">=3.14,<3.15"
+license = "MIT"
+dependencies = ["Jinja2==3.1.6"]
+
+[dependency-groups]
+dev = ["pytest==9.1.1", "hatchling==1.32.4"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/flask_template_contract"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--import-mode=importlib"
+norecursedirs = ["fixtures"]

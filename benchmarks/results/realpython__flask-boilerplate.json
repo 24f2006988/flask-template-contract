@@ -1,0 +1,22 @@
+{
+  "repo": "realpython/flask-boilerplate",
+  "commit": "488e33624bf0236fc16358d9e8cd66590e0e89ee",
+  "url": "https://github.com/realpython/flask-boilerplate.git",
+  "templates": 18,
+  "render_sites": 12,
+  "runtime_seconds": 3.299,
+  "errors": 0,
+  "warnings": 0,
+  "cant_verify": 0,
+  "report": {
+    "schema_version": 1,
+    "complete": true,
+    "findings": [],
+    "summary": {
+      "errors": 0,
+      "warnings": 0,
+      "cant_verify": 0
+    },
+    "exit_code": 0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "repo": "miguelgrinberg/flask-celery-example",
+  "commit": "76f785ebe6a049e873a8c28b4f25686b64c4fa55",
+  "url": "https://github.com/miguelgrinberg/flask-celery-example.git",
+  "templates": 1,
+  "render_sites": 1,
+  "runtime_seconds": 1.673,
+  "errors": 0,
+  "warnings": 0,
+  "cant_verify": 0,
+  "report": {
+    "schema_version": 1,
+    "complete": true,
+    "findings": [],
+    "summary": {
+      "errors": 0,
+      "warnings": 0,
+      "cant_verify": 0
+    },
+    "exit_code": 0
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "repo": "pallets-eco/flask-admin",
+  "commit": "4f8be4580b082c6047492baa801f3f08642c9a75",
+  "url": "https://github.com/pallets-eco/flask-admin.git",
+  "templates": 70,
+  "render_sites": 4,
+  "runtime_seconds": 28.667,
+  "errors": 0,
+  "warnings": 0,
+  "cant_verify": 9,
+  "report": {
+    "schema_version": 1,
+    "complete": false,
+    "findings": [
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "examples/auth/main.py",
+          "line": 128,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "examples/auth_flask_login/main.py",
+          "line": 41,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "examples/azure_blob_storage/main.py",
+          "line": 17,
+          "column": 9
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Babel.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "examples/azure_blob_storage/main.py",
+          "line": 17,
+          "column": 9
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Babel.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "examples/azure_blob_storage/main.py",
+          "line": 17,
+          "column": 9
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Babel.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "examples/azure_blob_storage/main.py",
+          "line": 17,
+          "column": 9
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "locations.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Babel.",
+        "related_locations": [],
+        "dependency_chain": [
+          "locations.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "examples/sqla_custom_inline_forms/main.py",
+          "line": 156,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "locations.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "locations.html"
+        ]
+      },
+      {
+        "code": "FTC101",
+        "severity": "cant_verify",
+        "location": {
+          "file": "flask_admin/base.py",
+          "line": 375,
+          "column": 16
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Keyword context is unpacked.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC102",
+        "severity": "cant_verify",
+        "location": {
+          "file": "flask_admin/base.py",
+          "line": 375,
+          "column": 16
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Render target is dynamic.",
+        "related_locations": [],
+        "dependency_chain": []
+      }
+    ],
+    "summary": {
+      "errors": 0,
+      "warnings": 0,
+      "cant_verify": 9
+    },
+    "exit_code": 0
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "repo": "cookiecutter-flask/cookiecutter-flask",
+  "commit": "e5666c23a633b5b6fcb0dc2cfda2441d7f885727",
+  "url": "https://github.com/cookiecutter-flask/cookiecutter-flask.git",
+  "templates": 10,
+  "render_sites": 1,
+  "runtime_seconds": 2.644,
+  "errors": 0,
+  "warnings": 0,
+  "cant_verify": 7,
+  "report": {
+    "schema_version": 1,
+    "complete": false,
+    "findings": [
+      {
+        "code": "FTC112",
+        "severity": "cant_verify",
+        "location": {
+          "file": "{{cookiecutter.app_name}}/autoapp.py",
+          "line": 3,
+          "column": 1
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Python source could not be parsed.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC112",
+        "severity": "cant_verify",
+        "location": {
+          "file": "{{cookiecutter.app_name}}/{{cookiecutter.app_name}}/app.py",
+          "line": 8,
+          "column": 1
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Python source could not be parsed.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "{{cookiecutter.app_name}}/{{cookiecutter.app_name}}/extensions.py",
+          "line": 14,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "users/members.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "users/members.html"
+        ]
+      },
+      {
+        "code": "FTC112",
+        "severity": "cant_verify",
+        "location": {
+          "file": "{{cookiecutter.app_name}}/{{cookiecutter.app_name}}/public/forms.py",
+          "line": 7,
+          "column": 1
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Python source could not be parsed.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC112",
+        "severity": "cant_verify",
+        "location": {
+          "file": "{{cookiecutter.app_name}}/{{cookiecutter.app_name}}/public/views.py",
+          "line": 14,
+          "column": 1
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Python source could not be parsed.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC112",
+        "severity": "cant_verify",
+        "location": {
+          "file": "{{cookiecutter.app_name}}/{{cookiecutter.app_name}}/user/models.py",
+          "line": 8,
+          "column": 1
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Python source could not be parsed.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "{{cookiecutter.app_name}}/{{cookiecutter.app_name}}/user/views.py",
+          "line": 13,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "users/members.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "users/members.html"
+        ]
+      }
+    ],
+    "summary": {
+      "errors": 0,
+      "warnings": 0,
+      "cant_verify": 7
+    },
+    "exit_code": 0
+  }
+}

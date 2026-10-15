@@ -1,0 +1,707 @@
+{
+  "repo": "miguelgrinberg/microblog",
+  "commit": "a975ef64864354867c88e0ed3a17ba7d17dca752",
+  "url": "https://github.com/miguelgrinberg/microblog.git",
+  "templates": 18,
+  "render_sites": 18,
+  "runtime_seconds": 3.103,
+  "errors": 0,
+  "warnings": 0,
+  "cant_verify": 36,
+  "report": {
+    "schema_version": 1,
+    "complete": false,
+    "findings": [
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "edit_profile.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "edit_profile.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "email/reset_password.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "email/reset_password.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "email/reset_password.txt",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "email/reset_password.txt"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "messages.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "messages.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "search.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "search.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "send_message.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "send_message.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": "setUp",
+        "route": null,
+        "branch": null,
+        "template": "errors/404.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/404.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": "tearDown",
+        "route": null,
+        "branch": null,
+        "template": "errors/500.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/500.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": "test_follow",
+        "route": null,
+        "branch": null,
+        "template": "auth/register.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/register.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": "test_follow",
+        "route": null,
+        "branch": null,
+        "template": "email/export_posts.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "email/export_posts.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": "test_follow",
+        "route": null,
+        "branch": null,
+        "template": "email/export_posts.txt",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "email/export_posts.txt"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": "test_follow",
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": "test_follow_posts",
+        "route": null,
+        "branch": null,
+        "template": "auth/reset_password.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/reset_password.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": "test_follow_posts",
+        "route": null,
+        "branch": null,
+        "template": "auth/reset_password_request.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/reset_password_request.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": "test_follow_posts",
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": "test_follow_posts",
+        "route": null,
+        "branch": null,
+        "template": "user.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": "test_follow_posts",
+        "route": null,
+        "branch": null,
+        "template": "user_popup.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user_popup.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 23,
+          "column": 9
+        },
+        "function": "test_password_hashing",
+        "route": null,
+        "branch": null,
+        "template": "auth/login.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/login.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/auth/email.py",
+          "line": 11,
+          "column": 26
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "email/reset_password.txt",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "email/reset_password.txt"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/auth/email.py",
+          "line": 13,
+          "column": 26
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "email/reset_password.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "email/reset_password.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/auth/routes.py",
+          "line": 30,
+          "column": 12
+        },
+        "function": "test_password_hashing",
+        "route": null,
+        "branch": null,
+        "template": "auth/login.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/login.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/auth/routes.py",
+          "line": 51,
+          "column": 12
+        },
+        "function": "test_follow",
+        "route": null,
+        "branch": null,
+        "template": "auth/register.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/register.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/auth/routes.py",
+          "line": 68,
+          "column": 12
+        },
+        "function": "test_follow_posts",
+        "route": null,
+        "branch": null,
+        "template": "auth/reset_password_request.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/reset_password_request.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/auth/routes.py",
+          "line": 85,
+          "column": 12
+        },
+        "function": "test_follow_posts",
+        "route": null,
+        "branch": null,
+        "template": "auth/reset_password.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/reset_password.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/errors/handlers.py",
+          "line": 16,
+          "column": 12
+        },
+        "function": "setUp",
+        "route": null,
+        "branch": null,
+        "template": "errors/404.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/404.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/errors/handlers.py",
+          "line": 24,
+          "column": 12
+        },
+        "function": "tearDown",
+        "route": null,
+        "branch": null,
+        "template": "errors/500.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/500.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/routes.py",
+          "line": 49,
+          "column": 12
+        },
+        "function": "test_follow",
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/routes.py",
+          "line": 66,
+          "column": 12
+        },
+        "function": "test_follow_posts",
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/routes.py",
+          "line": 85,
+          "column": 12
+        },
+        "function": "test_follow_posts",
+        "route": null,
+        "branch": null,
+        "template": "user.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/routes.py",
+          "line": 94,
+          "column": 12
+        },
+        "function": "test_follow_posts",
+        "route": null,
+        "branch": null,
+        "template": "user_popup.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user_popup.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/routes.py",
+          "line": 110,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "edit_profile.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "edit_profile.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/routes.py",
+          "line": 177,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "search.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "search.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/routes.py",
+          "line": 195,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "send_message.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "send_message.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/routes.py",
+          "line": 215,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "messages.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "messages.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/tasks.py",
+          "line": 47,
+          "column": 23
+        },
+        "function": "test_follow",
+        "route": null,
+        "branch": null,
+        "template": "email/export_posts.txt",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "email/export_posts.txt"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/tasks.py",
+          "line": 48,
+          "column": 23
+        },
+        "function": "test_follow",
+        "route": null,
+        "branch": null,
+        "template": "email/export_posts.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "email/export_posts.html"
+        ]
+      }
+    ],
+    "summary": {
+      "errors": 0,
+      "warnings": 0,
+      "cant_verify": 36
+    },
+    "exit_code": 0
+  }
+}

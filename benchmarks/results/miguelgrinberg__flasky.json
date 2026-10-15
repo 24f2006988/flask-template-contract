@@ -1,0 +1,847 @@
+{
+  "repo": "miguelgrinberg/flasky",
+  "commit": "3beedd640b9146b0bd65c8c2ecf402b01798bc33",
+  "url": "https://github.com/miguelgrinberg/flasky.git",
+  "templates": 24,
+  "render_sites": 21,
+  "runtime_seconds": 2.811,
+  "errors": 0,
+  "warnings": 0,
+  "cant_verify": 44,
+  "report": {
+    "schema_version": 1,
+    "complete": false,
+    "findings": [
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "403.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "403.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/change_email.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/change_email.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/change_password.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/change_password.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/login.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/login.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/register.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/register.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/reset_password.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/reset_password.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/reset_password.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/reset_password.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "edit_post.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "edit_post.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "edit_profile.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "edit_profile.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "edit_profile.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "edit_profile.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "followers.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "followers.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "followers.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "followers.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "moderate.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "moderate.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "post.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "post.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": "downgrade",
+        "route": null,
+        "branch": null,
+        "template": "500.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "500.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": "downgrade",
+        "route": null,
+        "branch": null,
+        "template": "auth/unconfirmed.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/unconfirmed.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": "upgrade",
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/__init__.py",
+          "line": 12,
+          "column": 10
+        },
+        "function": "upgrade",
+        "route": null,
+        "branch": null,
+        "template": "404.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Moment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "404.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/auth/views.py",
+          "line": 27,
+          "column": 12
+        },
+        "function": "downgrade",
+        "route": null,
+        "branch": null,
+        "template": "auth/unconfirmed.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/unconfirmed.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/auth/views.py",
+          "line": 42,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/login.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/login.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/auth/views.py",
+          "line": 67,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/register.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/register.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/auth/views.py",
+          "line": 106,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/change_password.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/change_password.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/auth/views.py",
+          "line": 124,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/reset_password.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/reset_password.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/auth/views.py",
+          "line": 139,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/reset_password.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/reset_password.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/auth/views.py",
+          "line": 158,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/change_email.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/change_email.html"
+        ]
+      },
+      {
+        "code": "FTC101",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/email.py",
+          "line": 16,
+          "column": 16
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Keyword context is unpacked.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC102",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/email.py",
+          "line": 16,
+          "column": 16
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Render target is dynamic.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC101",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/email.py",
+          "line": 17,
+          "column": 16
+        },
+        "function": "upgrade",
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Keyword context is unpacked.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC102",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/email.py",
+          "line": 17,
+          "column": 16
+        },
+        "function": "upgrade",
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Render target is dynamic.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/errors.py",
+          "line": 12,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "403.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "403.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/errors.py",
+          "line": 22,
+          "column": 12
+        },
+        "function": "upgrade",
+        "route": null,
+        "branch": null,
+        "template": "404.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "404.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/errors.py",
+          "line": 32,
+          "column": 12
+        },
+        "function": "downgrade",
+        "route": null,
+        "branch": null,
+        "template": "500.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "500.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/views.py",
+          "line": 56,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/views.py",
+          "line": 68,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/views.py",
+          "line": 87,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "edit_profile.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "edit_profile.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/views.py",
+          "line": 115,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "edit_profile.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "edit_profile.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/views.py",
+          "line": 138,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "post.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "post.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/views.py",
+          "line": 157,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "edit_post.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "edit_post.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/views.py",
+          "line": 206,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "followers.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "followers.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/views.py",
+          "line": 223,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "followers.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "followers.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "app/main/views.py",
+          "line": 253,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "moderate.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "moderate.html"
+        ]
+      }
+    ],
+    "summary": {
+      "errors": 0,
+      "warnings": 0,
+      "cant_verify": 44
+    },
+    "exit_code": 0
+  }
+}

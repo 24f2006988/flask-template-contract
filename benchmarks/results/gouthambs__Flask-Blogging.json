@@ -1,0 +1,327 @@
+{
+  "repo": "gouthambs/Flask-Blogging",
+  "commit": "f11ea155e59a284f2bc7df30db15f1183d41fedb",
+  "url": "https://github.com/gouthambs/Flask-Blogging.git",
+  "templates": 9,
+  "render_sites": 8,
+  "runtime_seconds": 3.787,
+  "errors": 0,
+  "warnings": 0,
+  "cant_verify": 16,
+  "report": {
+    "schema_version": 1,
+    "complete": false,
+    "findings": [
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "example/blog_admin.py",
+          "line": 38,
+          "column": 21
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/editor.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/editor.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "example/blog_admin.py",
+          "line": 38,
+          "column": 21
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/editor.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/editor.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "example/blog_admin.py",
+          "line": 38,
+          "column": 21
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/editor.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/editor.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "example/blog_admin.py",
+          "line": 38,
+          "column": 21
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "example/blog_admin.py",
+          "line": 38,
+          "column": 21
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "example/blog_admin.py",
+          "line": 38,
+          "column": 21
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "example/blog_admin.py",
+          "line": 38,
+          "column": 21
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/page.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/page.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "example/blog_admin.py",
+          "line": 38,
+          "column": 21
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/sitemap.xml",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/sitemap.xml"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "flask_blogging/views.py",
+          "line": 132,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "flask_blogging/views.py",
+          "line": 153,
+          "column": 16
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/page.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/page.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "flask_blogging/views.py",
+          "line": 182,
+          "column": 16
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "flask_blogging/views.py",
+          "line": 212,
+          "column": 16
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "flask_blogging/views.py",
+          "line": 254,
+          "column": 28
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/editor.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/editor.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "flask_blogging/views.py",
+          "line": 268,
+          "column": 32
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/editor.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/editor.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "flask_blogging/views.py",
+          "line": 278,
+          "column": 20
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/editor.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/editor.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "flask_blogging/views.py",
+          "line": 331,
+          "column": 19
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "blogging/sitemap.xml",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "blogging/sitemap.xml"
+        ]
+      }
+    ],
+    "summary": {
+      "errors": 0,
+      "warnings": 0,
+      "cant_verify": 16
+    },
+    "exit_code": 0
+  }
+}

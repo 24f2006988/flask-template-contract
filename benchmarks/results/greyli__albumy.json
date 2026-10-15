@@ -1,0 +1,1531 @@
+{
+  "repo": "greyli/albumy",
+  "commit": "dfb591fd50bcd54431dacde54dad5579287556b6",
+  "url": "https://github.com/greyli/albumy.git",
+  "templates": 44,
+  "render_sites": 39,
+  "runtime_seconds": 3.551,
+  "errors": 0,
+  "warnings": 0,
+  "cant_verify": 80,
+  "report": {
+    "schema_version": 1,
+    "complete": false,
+    "findings": [
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/__init__.py",
+          "line": 84,
+          "column": 16
+        },
+        "function": "is_safe_url",
+        "route": null,
+        "branch": null,
+        "template": "errors/400.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/400.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/__init__.py",
+          "line": 88,
+          "column": 16
+        },
+        "function": "is_safe_url",
+        "route": null,
+        "branch": null,
+        "template": "errors/403.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/403.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/__init__.py",
+          "line": 92,
+          "column": 16
+        },
+        "function": "redirect_back",
+        "route": null,
+        "branch": null,
+        "template": "errors/404.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/404.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/__init__.py",
+          "line": 96,
+          "column": 16
+        },
+        "function": "redirect_back",
+        "route": null,
+        "branch": null,
+        "template": "errors/413.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/413.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/__init__.py",
+          "line": 100,
+          "column": 16
+        },
+        "function": "flash_errors",
+        "route": null,
+        "branch": null,
+        "template": "errors/500.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/500.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/__init__.py",
+          "line": 104,
+          "column": 16
+        },
+        "function": "flash_errors",
+        "route": null,
+        "branch": null,
+        "template": "errors/400.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/400.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/admin.py",
+          "line": 32,
+          "column": 12
+        },
+        "function": "generate_token",
+        "route": null,
+        "branch": null,
+        "template": "admin/index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "admin/index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/admin.py",
+          "line": 69,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "admin/edit_profile.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "admin/edit_profile.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/admin.py",
+          "line": 152,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "admin/manage_user.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "admin/manage_user.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/admin.py",
+          "line": 169,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "admin/manage_photo.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "admin/manage_photo.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/admin.py",
+          "line": 180,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "admin/manage_tag.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "admin/manage_tag.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/admin.py",
+          "line": 197,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "admin/manage_comment.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "admin/manage_comment.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/ajax.py",
+          "line": 29,
+          "column": 12
+        },
+        "function": "generate_token",
+        "route": null,
+        "branch": null,
+        "template": "main/profile_popup.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/profile_popup.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/auth.py",
+          "line": 37,
+          "column": 12
+        },
+        "function": "validate_token",
+        "route": null,
+        "branch": null,
+        "template": "auth/login.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/login.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/auth.py",
+          "line": 50,
+          "column": 12
+        },
+        "function": "validate_token",
+        "route": null,
+        "branch": null,
+        "template": "auth/login.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/login.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/auth.py",
+          "line": 80,
+          "column": 12
+        },
+        "function": "resize_image",
+        "route": null,
+        "branch": null,
+        "template": "auth/register.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/register.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/auth.py",
+          "line": 124,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/reset_password.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/reset_password.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/auth.py",
+          "line": 144,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/reset_password.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/reset_password.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/main.py",
+          "line": 40,
+          "column": 12
+        },
+        "function": "validate_token",
+        "route": null,
+        "branch": null,
+        "template": "main/index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/main.py",
+          "line": 46,
+          "column": 12
+        },
+        "function": "validate_token",
+        "route": null,
+        "branch": null,
+        "template": "main/explore.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/explore.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/main.py",
+          "line": 66,
+          "column": 12
+        },
+        "function": "rename_image",
+        "route": null,
+        "branch": null,
+        "template": "main/search.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/search.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/main.py",
+          "line": 81,
+          "column": 12
+        },
+        "function": "resize_image",
+        "route": null,
+        "branch": null,
+        "template": "main/notifications.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/notifications.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/main.py",
+          "line": 136,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "main/upload.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/upload.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/main.py",
+          "line": 152,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "main/photo.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/photo.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/main.py",
+          "line": 238,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "main/collectors.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/collectors.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/main.py",
+          "line": 383,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "main/tag.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/tag.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/user.py",
+          "line": 37,
+          "column": 12
+        },
+        "function": "validate_token",
+        "route": null,
+        "branch": null,
+        "template": "user/index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/user.py",
+          "line": 47,
+          "column": 12
+        },
+        "function": "validate_token",
+        "route": null,
+        "branch": null,
+        "template": "user/collections.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/collections.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/user.py",
+          "line": 87,
+          "column": 12
+        },
+        "function": "is_safe_url",
+        "route": null,
+        "branch": null,
+        "template": "user/followers.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/followers.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/user.py",
+          "line": 97,
+          "column": 12
+        },
+        "function": "redirect_back",
+        "route": null,
+        "branch": null,
+        "template": "user/following.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/following.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/user.py",
+          "line": 118,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user/settings/edit_profile.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/settings/edit_profile.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/user.py",
+          "line": 127,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user/settings/change_avatar.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/settings/change_avatar.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/user.py",
+          "line": 177,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user/settings/change_password.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/settings/change_password.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/user.py",
+          "line": 189,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user/settings/change_email.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/settings/change_email.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/user.py",
+          "line": 217,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user/settings/edit_notification.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/settings/edit_notification.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/user.py",
+          "line": 230,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user/settings/edit_privacy.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/settings/edit_privacy.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/blueprints/user.py",
+          "line": 242,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user/settings/delete_account.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/settings/delete_account.html"
+        ]
+      },
+      {
+        "code": "FTC101",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/emails.py",
+          "line": 23,
+          "column": 20
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Keyword context is unpacked.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC102",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/emails.py",
+          "line": 23,
+          "column": 20
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Render target is dynamic.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC101",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/emails.py",
+          "line": 24,
+          "column": 20
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Keyword context is unpacked.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC102",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/emails.py",
+          "line": 24,
+          "column": 20
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Render target is dynamic.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "admin/edit_profile.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "admin/edit_profile.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "admin/manage_comment.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "admin/manage_comment.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "admin/manage_photo.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "admin/manage_photo.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "admin/manage_tag.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "admin/manage_tag.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "admin/manage_user.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "admin/manage_user.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/reset_password.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/reset_password.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "auth/reset_password.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/reset_password.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "main/collectors.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/collectors.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "main/photo.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/photo.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "main/tag.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/tag.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "main/upload.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/upload.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user/settings/change_avatar.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/settings/change_avatar.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user/settings/change_email.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/settings/change_email.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user/settings/change_password.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/settings/change_password.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user/settings/delete_account.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/settings/delete_account.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user/settings/edit_notification.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/settings/edit_notification.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user/settings/edit_privacy.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/settings/edit_privacy.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "user/settings/edit_profile.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/settings/edit_profile.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "flash_errors",
+        "route": null,
+        "branch": null,
+        "template": "errors/400.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/400.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "flash_errors",
+        "route": null,
+        "branch": null,
+        "template": "errors/500.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/500.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "generate_token",
+        "route": null,
+        "branch": null,
+        "template": "admin/index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "admin/index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "generate_token",
+        "route": null,
+        "branch": null,
+        "template": "main/profile_popup.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/profile_popup.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "is_safe_url",
+        "route": null,
+        "branch": null,
+        "template": "errors/400.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/400.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "is_safe_url",
+        "route": null,
+        "branch": null,
+        "template": "errors/403.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/403.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "is_safe_url",
+        "route": null,
+        "branch": null,
+        "template": "user/followers.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/followers.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "redirect_back",
+        "route": null,
+        "branch": null,
+        "template": "errors/404.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/404.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "redirect_back",
+        "route": null,
+        "branch": null,
+        "template": "errors/413.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "errors/413.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "redirect_back",
+        "route": null,
+        "branch": null,
+        "template": "user/following.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/following.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "rename_image",
+        "route": null,
+        "branch": null,
+        "template": "main/search.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/search.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "resize_image",
+        "route": null,
+        "branch": null,
+        "template": "auth/register.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/register.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "resize_image",
+        "route": null,
+        "branch": null,
+        "template": "main/notifications.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/notifications.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "validate_token",
+        "route": null,
+        "branch": null,
+        "template": "auth/login.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/login.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "validate_token",
+        "route": null,
+        "branch": null,
+        "template": "auth/login.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "auth/login.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "validate_token",
+        "route": null,
+        "branch": null,
+        "template": "main/explore.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/explore.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "validate_token",
+        "route": null,
+        "branch": null,
+        "template": "main/index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "main/index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "validate_token",
+        "route": null,
+        "branch": null,
+        "template": "user/collections.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/collections.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "albumy/extensions.py",
+          "line": 20,
+          "column": 17
+        },
+        "function": "validate_token",
+        "route": null,
+        "branch": null,
+        "template": "user/index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: LoginManager.",
+        "related_locations": [],
+        "dependency_chain": [
+          "user/index.html"
+        ]
+      }
+    ],
+    "summary": {
+      "errors": 0,
+      "warnings": 0,
+      "cant_verify": 80
+    },
+    "exit_code": 0
+  }
+}

@@ -1,0 +1,1315 @@
+{
+  "repo": "helloflask/flask-examples",
+  "commit": "8d35d2dcb24e41c56d859f0aca0f7cc496d3151e",
+  "url": "https://github.com/helloflask/flask-examples.git",
+  "templates": 71,
+  "render_sites": 33,
+  "runtime_seconds": 5.664,
+  "errors": 0,
+  "warnings": 0,
+  "cant_verify": 68,
+  "report": {
+    "schema_version": 1,
+    "complete": false,
+    "findings": [
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "2form.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "2form.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "2form2view.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "2form2view.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "2form2view.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "2form2view.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "2form2view.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "2form2view.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "2submit.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "2submit.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "bootstrap.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "bootstrap.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "ckeditor.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "ckeditor.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "dropzone.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "dropzone.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "edit_note.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "edit_note.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "emails/subscribe.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "emails/subscribe.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "foo.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "foo.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "new_note.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "new_note.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "optimized.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "optimized.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "post.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "post.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "pure_html.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "pure_html.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "qux.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "qux.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "subscribe.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "subscribe.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "upload.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "upload.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "upload.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "upload.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "uploaded.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "uploaded.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": "baz",
+        "route": null,
+        "branch": null,
+        "template": "basic.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "basic.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": "baz",
+        "route": null,
+        "branch": null,
+        "template": "emails/subscribe.txt",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "emails/subscribe.txt"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": "index",
+        "route": "/",
+        "branch": null,
+        "template": "bar.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "bar.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": "index",
+        "route": "/",
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": "inject_info",
+        "route": null,
+        "branch": null,
+        "template": "baz.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "baz.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": "inject_info",
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": "inject_info",
+        "route": null,
+        "branch": null,
+        "template": "unoptimized.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "unoptimized.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": "watchlist",
+        "route": "/watchlist",
+        "branch": null,
+        "template": "watchlist.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "watchlist.html"
+        ]
+      },
+      {
+        "code": "FTC110",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 16,
+          "column": 10
+        },
+        "function": "watchlist_with_static",
+        "route": "/watchlist2",
+        "branch": null,
+        "template": "watchlist_with_static.html",
+        "variable": null,
+        "reason": "Unsupported extension or loader customization: Environment.",
+        "related_locations": [],
+        "dependency_chain": [
+          "watchlist_with_static.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 41,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 46,
+          "column": 12
+        },
+        "function": "inject_info",
+        "route": null,
+        "branch": null,
+        "template": "unoptimized.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "unoptimized.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "assets/app.py",
+          "line": 51,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "optimized.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "optimized.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "cache/app.py",
+          "line": 27,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "cache/app.py",
+          "line": 33,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "foo.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "foo.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "cache/app.py",
+          "line": 40,
+          "column": 12
+        },
+        "function": "index",
+        "route": "/",
+        "branch": null,
+        "template": "bar.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "bar.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "cache/app.py",
+          "line": 47,
+          "column": 12
+        },
+        "function": "inject_info",
+        "route": null,
+        "branch": null,
+        "template": "baz.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "baz.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "cache/app.py",
+          "line": 55,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "qux.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "qux.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "database/app.py",
+          "line": 83,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "database/app.py",
+          "line": 96,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "new_note.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "new_note.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "database/app.py",
+          "line": 109,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "edit_note.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "edit_note.html"
+        ]
+      },
+      {
+        "code": "FTC101",
+        "severity": "cant_verify",
+        "location": {
+          "file": "email/app.py",
+          "line": 67,
+          "column": 20
+        },
+        "function": "baz",
+        "route": null,
+        "branch": null,
+        "template": "emails/subscribe.txt",
+        "variable": null,
+        "reason": "Keyword context is unpacked.",
+        "related_locations": [],
+        "dependency_chain": [
+          "emails/subscribe.txt"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "email/app.py",
+          "line": 67,
+          "column": 20
+        },
+        "function": "baz",
+        "route": null,
+        "branch": null,
+        "template": "emails/subscribe.txt",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "emails/subscribe.txt"
+        ]
+      },
+      {
+        "code": "FTC101",
+        "severity": "cant_verify",
+        "location": {
+          "file": "email/app.py",
+          "line": 68,
+          "column": 20
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "emails/subscribe.html",
+        "variable": null,
+        "reason": "Keyword context is unpacked.",
+        "related_locations": [],
+        "dependency_chain": [
+          "emails/subscribe.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "email/app.py",
+          "line": 68,
+          "column": 20
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "emails/subscribe.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "emails/subscribe.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "email/app.py",
+          "line": 108,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "email/app.py",
+          "line": 120,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "subscribe.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "subscribe.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "form/app.py",
+          "line": 46,
+          "column": 12
+        },
+        "function": "inject_info",
+        "route": null,
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "form/app.py",
+          "line": 56,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "pure_html.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "pure_html.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "form/app.py",
+          "line": 66,
+          "column": 12
+        },
+        "function": "baz",
+        "route": null,
+        "branch": null,
+        "template": "basic.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "basic.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "form/app.py",
+          "line": 76,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "bootstrap.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "bootstrap.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "form/app.py",
+          "line": 95,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "uploaded.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "uploaded.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "form/app.py",
+          "line": 119,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "upload.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "upload.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "form/app.py",
+          "line": 160,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "upload.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "upload.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "form/app.py",
+          "line": 178,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "dropzone.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "dropzone.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "form/app.py",
+          "line": 192,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "2submit.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "2submit.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "form/app.py",
+          "line": 210,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "2form.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "2form.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "form/app.py",
+          "line": 217,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "2form2view.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "2form2view.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "form/app.py",
+          "line": 230,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "2form2view.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "2form2view.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "form/app.py",
+          "line": 242,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "2form2view.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "2form2view.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "form/app.py",
+          "line": 252,
+          "column": 16
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "post.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "post.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "form/app.py",
+          "line": 253,
+          "column": 12
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": "ckeditor.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "ckeditor.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "template/app.py",
+          "line": 35,
+          "column": 12
+        },
+        "function": "watchlist",
+        "route": "/watchlist",
+        "branch": null,
+        "template": "watchlist.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "watchlist.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "template/app.py",
+          "line": 40,
+          "column": 12
+        },
+        "function": "index",
+        "route": "/",
+        "branch": null,
+        "template": "index.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "index.html"
+        ]
+      },
+      {
+        "code": "FTC107",
+        "severity": "cant_verify",
+        "location": {
+          "file": "template/app.py",
+          "line": 72,
+          "column": 12
+        },
+        "function": "watchlist_with_static",
+        "route": "/watchlist2",
+        "branch": null,
+        "template": "watchlist_with_static.html",
+        "variable": null,
+        "reason": "No literal render candidate could be found.",
+        "related_locations": [],
+        "dependency_chain": [
+          "watchlist_with_static.html"
+        ]
+      }
+    ],
+    "summary": {
+      "errors": 0,
+      "warnings": 0,
+      "cant_verify": 68
+    },
+    "exit_code": 0
+  }
+}

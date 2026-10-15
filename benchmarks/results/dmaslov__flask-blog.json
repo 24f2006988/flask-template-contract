@@ -1,0 +1,2254 @@
+{
+  "repo": "dmaslov/flask-blog",
+  "commit": "555003ac62e456b73bdd485ac5b3cb100e988f17",
+  "url": "https://github.com/dmaslov/flask-blog.git",
+  "templates": 24,
+  "render_sites": 14,
+  "runtime_seconds": 5.922,
+  "errors": 72,
+  "warnings": 0,
+  "cant_verify": 23,
+  "report": {
+    "schema_version": 1,
+    "complete": false,
+    "findings": [
+      {
+        "code": "FTC112",
+        "severity": "cant_verify",
+        "location": {
+          "file": "post.py",
+          "line": 177,
+          "column": 1
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Python source could not be parsed.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC112",
+        "severity": "cant_verify",
+        "location": {
+          "file": "settings.py",
+          "line": 117,
+          "column": 1
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Python source could not be parsed.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 25,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 25,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 26,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 26,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 26,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 26,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 27,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 27,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 31,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 31,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 32,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 32,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 32,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 32,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 33,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 33,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 40,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 40,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 41,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 41,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 41,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 41,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 42,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 42,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 46,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 46,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 47,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 47,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 47,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 47,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 48,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 48,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 52,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 52,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 52,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 52,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 52,
+          "column": null
+        },
+        "function": "post_edit",
+        "route": "/post_edit?id=<id>",
+        "branch": null,
+        "template": "edit_post.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the post_edit render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 175,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_post.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 52,
+          "column": null
+        },
+        "function": "post_edit",
+        "route": "/post_edit?id=<id>",
+        "branch": null,
+        "template": "edit_post.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the post_edit render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 175,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_post.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 52,
+          "column": null
+        },
+        "function": "post_preview",
+        "route": "/post_preview",
+        "branch": null,
+        "template": "preview.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the post_preview render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 146,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "preview.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 52,
+          "column": null
+        },
+        "function": "post_preview",
+        "route": "/post_preview",
+        "branch": null,
+        "template": "preview.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the post_preview render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 146,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "preview.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 52,
+          "column": null
+        },
+        "function": "single_post",
+        "route": "/post/<permalink>",
+        "branch": null,
+        "template": "single_post.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the single_post render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 53,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "single_post.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 52,
+          "column": null
+        },
+        "function": "single_post",
+        "route": "/post/<permalink>",
+        "branch": null,
+        "template": "single_post.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the single_post render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 53,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "single_post.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 52,
+          "column": null
+        },
+        "function": "users_list",
+        "route": "/users",
+        "branch": null,
+        "template": "users.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the users_list render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 237,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "users.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 52,
+          "column": null
+        },
+        "function": "users_list",
+        "route": "/users",
+        "branch": null,
+        "template": "users.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the users_list render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 237,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "users.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 53,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 53,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 54,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error",
+        "reason": "Template reads error, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 54,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "error_type",
+        "reason": "Template reads error_type, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 55,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 55,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 55,
+          "column": null
+        },
+        "function": "post_edit",
+        "route": "/post_edit?id=<id>",
+        "branch": null,
+        "template": "edit_post.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the post_edit render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 175,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_post.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 55,
+          "column": null
+        },
+        "function": "post_preview",
+        "route": "/post_preview",
+        "branch": null,
+        "template": "preview.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the post_preview render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 146,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "preview.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 55,
+          "column": null
+        },
+        "function": "single_post",
+        "route": "/post/<permalink>",
+        "branch": null,
+        "template": "single_post.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the single_post render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 53,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "single_post.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 55,
+          "column": null
+        },
+        "function": "users_list",
+        "route": "/users",
+        "branch": null,
+        "template": "users.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the users_list render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 237,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "users.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 57,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 57,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 57,
+          "column": null
+        },
+        "function": "post_edit",
+        "route": "/post_edit?id=<id>",
+        "branch": null,
+        "template": "edit_post.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the post_edit render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 175,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_post.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 57,
+          "column": null
+        },
+        "function": "post_preview",
+        "route": "/post_preview",
+        "branch": null,
+        "template": "preview.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the post_preview render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 146,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "preview.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 57,
+          "column": null
+        },
+        "function": "single_post",
+        "route": "/post/<permalink>",
+        "branch": null,
+        "template": "single_post.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the single_post render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 53,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "single_post.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 57,
+          "column": null
+        },
+        "function": "users_list",
+        "route": "/users",
+        "branch": null,
+        "template": "users.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the users_list render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 237,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "users.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 62,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 62,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 62,
+          "column": null
+        },
+        "function": "post_edit",
+        "route": "/post_edit?id=<id>",
+        "branch": null,
+        "template": "edit_post.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the post_edit render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 175,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_post.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 62,
+          "column": null
+        },
+        "function": "post_preview",
+        "route": "/post_preview",
+        "branch": null,
+        "template": "preview.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the post_preview render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 146,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "preview.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 62,
+          "column": null
+        },
+        "function": "single_post",
+        "route": "/post/<permalink>",
+        "branch": null,
+        "template": "single_post.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the single_post render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 53,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "single_post.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 62,
+          "column": null
+        },
+        "function": "users_list",
+        "route": "/users",
+        "branch": null,
+        "template": "users.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the users_list render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 237,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "users.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 63,
+          "column": null
+        },
+        "function": "add_user",
+        "route": "/add_user",
+        "branch": null,
+        "template": "add_user.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the add_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 244,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "add_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 63,
+          "column": null
+        },
+        "function": "edit_user",
+        "route": "/edit_user?id=<id>",
+        "branch": null,
+        "template": "edit_user.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the edit_user render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 251,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_user.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 63,
+          "column": null
+        },
+        "function": "post_edit",
+        "route": "/post_edit?id=<id>",
+        "branch": null,
+        "template": "edit_post.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the post_edit render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 175,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "edit_post.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 63,
+          "column": null
+        },
+        "function": "post_preview",
+        "route": "/post_preview",
+        "branch": null,
+        "template": "preview.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the post_preview render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 146,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "preview.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 63,
+          "column": null
+        },
+        "function": "single_post",
+        "route": "/post/<permalink>",
+        "branch": null,
+        "template": "single_post.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the single_post render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 53,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "single_post.html"
+        ]
+      },
+      {
+        "code": "FTC001",
+        "severity": "error",
+        "location": {
+          "file": "templates/index.html",
+          "line": 63,
+          "column": null
+        },
+        "function": "users_list",
+        "route": "/users",
+        "branch": null,
+        "template": "users.html",
+        "variable": "pagination",
+        "reason": "Template reads pagination, but the users_list render supplies no value for it.",
+        "related_locations": [
+          {
+            "file": "web.py",
+            "line": 237,
+            "column": 12
+          }
+        ],
+        "dependency_chain": [
+          "users.html"
+        ]
+      },
+      {
+        "code": "FTC112",
+        "severity": "cant_verify",
+        "location": {
+          "file": "user.py",
+          "line": 179,
+          "column": 1
+        },
+        "function": null,
+        "route": null,
+        "branch": null,
+        "template": null,
+        "variable": null,
+        "reason": "Python source could not be parsed.",
+        "related_locations": [],
+        "dependency_chain": []
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 136,
+          "column": 12
+        },
+        "function": "new_post",
+        "route": "/newpost",
+        "branch": null,
+        "template": "new_post.html",
+        "variable": "error",
+        "reason": "branch-dependent variable: error",
+        "related_locations": [],
+        "dependency_chain": [
+          "new_post.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 136,
+          "column": 12
+        },
+        "function": "new_post",
+        "route": "/newpost",
+        "branch": null,
+        "template": "new_post.html",
+        "variable": "error",
+        "reason": "branch-dependent variable: error",
+        "related_locations": [],
+        "dependency_chain": [
+          "new_post.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 136,
+          "column": 12
+        },
+        "function": "new_post",
+        "route": "/newpost",
+        "branch": null,
+        "template": "new_post.html",
+        "variable": "error",
+        "reason": "branch-dependent variable: error",
+        "related_locations": [],
+        "dependency_chain": [
+          "new_post.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 136,
+          "column": 12
+        },
+        "function": "new_post",
+        "route": "/newpost",
+        "branch": null,
+        "template": "new_post.html",
+        "variable": "error",
+        "reason": "branch-dependent variable: error",
+        "related_locations": [],
+        "dependency_chain": [
+          "new_post.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 136,
+          "column": 12
+        },
+        "function": "new_post",
+        "route": "/newpost",
+        "branch": null,
+        "template": "new_post.html",
+        "variable": "error",
+        "reason": "branch-dependent variable: error",
+        "related_locations": [],
+        "dependency_chain": [
+          "new_post.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 136,
+          "column": 12
+        },
+        "function": "new_post",
+        "route": "/newpost",
+        "branch": null,
+        "template": "new_post.html",
+        "variable": "error_type",
+        "reason": "branch-dependent variable: error_type",
+        "related_locations": [],
+        "dependency_chain": [
+          "new_post.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 136,
+          "column": 12
+        },
+        "function": "new_post",
+        "route": "/newpost",
+        "branch": null,
+        "template": "new_post.html",
+        "variable": "error_type",
+        "reason": "branch-dependent variable: error_type",
+        "related_locations": [],
+        "dependency_chain": [
+          "new_post.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 136,
+          "column": 12
+        },
+        "function": "new_post",
+        "route": "/newpost",
+        "branch": null,
+        "template": "new_post.html",
+        "variable": "error_type",
+        "reason": "branch-dependent variable: error_type",
+        "related_locations": [],
+        "dependency_chain": [
+          "new_post.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 136,
+          "column": 12
+        },
+        "function": "new_post",
+        "route": "/newpost",
+        "branch": null,
+        "template": "new_post.html",
+        "variable": "error_type",
+        "reason": "branch-dependent variable: error_type",
+        "related_locations": [],
+        "dependency_chain": [
+          "new_post.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 136,
+          "column": 12
+        },
+        "function": "new_post",
+        "route": "/newpost",
+        "branch": null,
+        "template": "new_post.html",
+        "variable": "error_type",
+        "reason": "branch-dependent variable: error_type",
+        "related_locations": [],
+        "dependency_chain": [
+          "new_post.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 220,
+          "column": 12
+        },
+        "function": "login",
+        "route": "/login",
+        "branch": null,
+        "template": "login.html",
+        "variable": "error",
+        "reason": "branch-dependent variable: error",
+        "related_locations": [],
+        "dependency_chain": [
+          "login.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 220,
+          "column": 12
+        },
+        "function": "login",
+        "route": "/login",
+        "branch": null,
+        "template": "login.html",
+        "variable": "error",
+        "reason": "branch-dependent variable: error",
+        "related_locations": [],
+        "dependency_chain": [
+          "login.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 220,
+          "column": 12
+        },
+        "function": "login",
+        "route": "/login",
+        "branch": null,
+        "template": "login.html",
+        "variable": "error",
+        "reason": "branch-dependent variable: error",
+        "related_locations": [],
+        "dependency_chain": [
+          "login.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 220,
+          "column": 12
+        },
+        "function": "login",
+        "route": "/login",
+        "branch": null,
+        "template": "login.html",
+        "variable": "error_type",
+        "reason": "branch-dependent variable: error_type",
+        "related_locations": [],
+        "dependency_chain": [
+          "login.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 220,
+          "column": 12
+        },
+        "function": "login",
+        "route": "/login",
+        "branch": null,
+        "template": "login.html",
+        "variable": "error_type",
+        "reason": "branch-dependent variable: error_type",
+        "related_locations": [],
+        "dependency_chain": [
+          "login.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 220,
+          "column": 12
+        },
+        "function": "login",
+        "route": "/login",
+        "branch": null,
+        "template": "login.html",
+        "variable": "error_type",
+        "reason": "branch-dependent variable: error_type",
+        "related_locations": [],
+        "dependency_chain": [
+          "login.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 338,
+          "column": 12
+        },
+        "function": "blog_settings",
+        "route": "/settings",
+        "branch": null,
+        "template": "settings.html",
+        "variable": "error",
+        "reason": "branch-dependent variable: error",
+        "related_locations": [],
+        "dependency_chain": [
+          "settings.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 338,
+          "column": 12
+        },
+        "function": "blog_settings",
+        "route": "/settings",
+        "branch": null,
+        "template": "settings.html",
+        "variable": "error",
+        "reason": "branch-dependent variable: error",
+        "related_locations": [],
+        "dependency_chain": [
+          "settings.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 403,
+          "column": 12
+        },
+        "function": "install",
+        "route": "/install",
+        "branch": null,
+        "template": "install.html",
+        "variable": "error",
+        "reason": "branch-dependent variable: error",
+        "related_locations": [],
+        "dependency_chain": [
+          "install.html"
+        ]
+      },
+      {
+        "code": "FTC104",
+        "severity": "cant_verify",
+        "location": {
+          "file": "web.py",
+          "line": 403,
+          "column": 12
+        },
+        "function": "install",
+        "route": "/install",
+        "branch": null,
+        "template": "install.html",
+        "variable": "error",
+        "reason": "branch-dependent variable: error",
+        "related_locations": [],
+        "dependency_chain": [
+          "install.html"
+        ]
+      }
+    ],
+    "summary": {
+      "errors": 72,
+      "warnings": 0,
+      "cant_verify": 23
+    },
+    "exit_code": 1
+  }
+}

@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import subprocess
 import sys
+import traceback
 
 import pytest
 from jinja2 import Environment, FileSystemLoader, StrictUndefined, UndefinedError
@@ -114,21 +115,26 @@ def test_analyzer_findings_match_expected_exactly(fixture_root: Path):
     assert not diff, f"{fixture_root.name}: {diff}"
 
 
-@pytest.mark.parametrize("fixture_root", _fixture_directories(), ids=lambda path: path.name)
-def test_ground_truth_for_simple_missing_variables(fixture_root: Path):
-    """Check simple FTC001s against Jinja2 StrictUndefined, without Flask."""
-    expected = json.loads((fixture_root / "expected.json").read_text(encoding="utf-8"))
-    missing = [finding for finding in expected["findings"] if finding["code"] == "FTC001"]
-    if not missing:
-        pytest.skip("fixture has no FTC001 finding")
-    if len(missing) != 1:
-        pytest.skip("multiple missing variables require route-specific rendering")
+def _missing_finding_cases():
+    cases = []
+    for fixture_root in _fixture_directories():
+        expected = json.loads((fixture_root / "expected.json").read_text(encoding="utf-8"))
+        for finding in expected["findings"]:
+            if finding["code"] == "FTC001":
+                cases.append((fixture_root, finding))
+    return cases
 
-    finding = missing[0]
+
+@pytest.mark.parametrize(
+    "fixture_root,finding", _missing_finding_cases(),
+    ids=[f"{fixture.name}-{finding['variable']}" for fixture, finding in _missing_finding_cases()],
+)
+def test_ground_truth_for_missing_variable(fixture_root: Path, finding: dict):
+    """Check simple FTC001s against Jinja2 StrictUndefined, without Flask."""
     template_files = list((fixture_root / "templates").rglob("*.html"))
     source = "\n".join(path.read_text(encoding="utf-8") for path in template_files)
-    if any(token in source for token in ("{% if", "{% macro", "{% call")):
-        pytest.skip("branch or macro semantics need route-aware rendering")
+    if fixture_root.name == "guards_all":
+        pytest.skip("StrictUndefined raises on maybe's bool conversion before the reported truthy use")
 
     scan = scan_project(fixture_root)
     site = next((site for site in scan.render_sites
@@ -144,5 +150,13 @@ def test_ground_truth_for_simple_missing_variables(fixture_root: Path):
         "current_user", "csrf_token", "range", "dict", "lipsum", "cycler", "joiner", "namespace",
     )})
     context = {name: object() for name in site.explicit_kwargs}
-    with pytest.raises(UndefinedError, match=f"{finding['variable']}.*undefined"):
+    with pytest.raises(UndefinedError, match=f"{finding['variable']}.*undefined") as raised:
         env.get_template(finding["template"]).render(**context)
+    template_path = (fixture_root / finding["location"]["file"]).resolve()
+    frames = traceback.extract_tb(raised.value.__traceback__)
+    matching = [frame for frame in frames if Path(frame.filename).resolve() == template_path]
+    assert matching, f"UndefinedError did not trace to {finding['template']}"
+    assert any(frame.lineno == finding["location"]["line"] for frame in matching), (
+        f"UndefinedError traced to {finding['template']} lines "
+        f"{[frame.lineno for frame in matching]}, expected line {finding['location']['line']}"
+    )

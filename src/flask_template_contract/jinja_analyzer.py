@@ -19,6 +19,7 @@ class _Walker(NodeVisitor):
         self.owner, self.chain = owner, chain
         self.scopes: list[set[str]] = [set(initial) | _GLOBALS | {"self", "super"}]
         self.guarded: set[str] = set()
+        self.macros: dict[str, nodes.Macro] = {}
 
     def loc(self, node: nodes.Node) -> SourceLocation:
         return self.owner.location(getattr(node, "lineno", 1))
@@ -90,12 +91,9 @@ class _Walker(NodeVisitor):
 
     def visit_Macro(self, node: nodes.Macro, *args) -> None:
         self.scopes[-1].add(node.name)
-        local = set(self.scopes[-1]) | {"caller", "varargs", "kwargs"}
         for arg, default in zip(node.args, node.defaults):
-            self.visit(default); self.bind_target(arg, local)
-        self.scopes.append(local)
-        for child in node.body: self.visit(child)
-        self.scopes.pop()
+            self.visit(default)
+        self.macros[node.name] = node
 
     def visit_CallBlock(self, node: nodes.CallBlock, *args) -> None:
         self.visit(node.call)
@@ -131,6 +129,13 @@ class _Walker(NodeVisitor):
         for kw in node.kwargs: self.visit(kw.value)
         if node.dyn_args: self.visit(node.dyn_args)
         if node.dyn_kwargs: self.visit(node.dyn_kwargs)
+        if isinstance(node.node, nodes.Name) and node.node.name in self.macros:
+            macro = self.macros[node.node.name]
+            local = set(self.scopes[-1]) | {"caller", "varargs", "kwargs"}
+            for arg in macro.args: self.bind_target(arg, local)
+            self.scopes.append(local)
+            for child in macro.body: self.visit(child)
+            self.scopes.pop()
 
     def visit_Getattr(self, node: nodes.Getattr, *args) -> None: self.visit(node.node)
     def visit_Getitem(self, node: nodes.Getitem, *args) -> None:
@@ -220,6 +225,7 @@ class _Analysis:
         blocks = {b.name: b for b in tree.find_all(nodes.Block)}
         has_extends = any(isinstance(item, nodes.Extends) for item in tree.body)
         walker = _Walker(self, chain, initial)
+        walker.macros = {macro.name: macro for macro in tree.find_all(nodes.Macro)}
         for child in tree.body:
             if isinstance(child, nodes.Extends): self.parent = child; continue
             if has_extends and isinstance(child, nodes.Block): continue

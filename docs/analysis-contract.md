@@ -352,16 +352,9 @@ is evidence of implemented analyzer correctness.
 
 ## Later work — explicitly deferred
 
-The thin slice is now implemented behind the shared records and CLI. It connects
-literal render calls to simple templates and has subprocess exit-code tests for
-the seven initial fixtures. The reader is intentionally temporary and is not a
-claim of deep Jinja correctness.
-
-In code, this is explicitly marked `TEMPORARY`: `Environment.parse` plus
-`jinja2.meta.find_undeclared_variables` supplies simple free-name reads. It is
-not yet the final scope-aware `jinja2.nodes` walker. Dependency directives and
-context processors therefore produce scoped CAN'T VERIFY findings rather than
-guessed errors or warnings.
+The v1 implementation connects AST-scanned render sites and providers to a
+scope-aware `jinja2.nodes` template analyzer. It checks every render site
+independently and preserves scoped uncertainty rather than guessing.
 
 Defer these beyond the current checkpoint and avoid implied support:
 

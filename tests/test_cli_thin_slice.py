@@ -64,7 +64,7 @@ def test_bad_root_is_tool_failure():
     assert result.returncode == 2
 
 
-def test_context_processor_is_conservative(tmp_path):
+def test_context_processor_literal_keys_are_supported(tmp_path):
     (tmp_path / "app.py").write_text(
         "from flask import Flask, render_template\n"
         "app = Flask(__name__)\n"
@@ -84,6 +84,6 @@ def test_context_processor_is_conservative(tmp_path):
     )
     payload = json.loads(result.stdout)
     assert result.returncode == 0
-    assert payload["complete"] is False
-    assert payload["summary"]["cant_verify"] == 1
+    assert payload["complete"] is True
+    assert payload["summary"]["cant_verify"] == 0
     assert payload["summary"]["errors"] == 0

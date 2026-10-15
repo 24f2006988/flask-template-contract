@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "complete": false,
+  "findings": [
+    {
+      "code": "FTC111",
+      "severity": "cant_verify",
+      "location": {"file": "templates/child.html", "line": 1, "column": 1},
+      "function": "dashboard",
+      "route": "/dashboard",
+      "branch": null,
+      "template": "child.html",
+      "variable": null,
+      "reason": "The inheritance parent is selected by layout_name, so the effective extends dependency cannot be resolved.",
+      "related_locations": [],
+      "dependency_chain": ["child.html"]
+    },
+    {
+      "code": "FTC111",
+      "severity": "cant_verify",
+      "location": {"file": "templates/child.html", "line": 2, "column": 1},
+      "function": "dashboard",
+      "route": "/dashboard",
+      "branch": null,
+      "template": "child.html",
+      "variable": null,
+      "reason": "The included template is selected by partial_name, so the include dependency cannot be resolved.",
+      "related_locations": [],
+      "dependency_chain": ["child.html"]
+    },
+    {
+      "code": "FTC111",
+      "severity": "cant_verify",
+      "location": {"file": "templates/child.html", "line": 3, "column": 1},
+      "function": "dashboard",
+      "route": "/dashboard",
+      "branch": null,
+      "template": "child.html",
+      "variable": null,
+      "reason": "The imported macro template is selected by macro_name, so the import dependency cannot be resolved.",
+      "related_locations": [],
+      "dependency_chain": ["child.html"]
+    }
+  ],
+  "summary": {"errors": 0, "warnings": 0, "cant_verify": 3},
+  "exit_code": 0
+}

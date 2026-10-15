@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "complete": false,
+  "findings": [
+    {
+      "code": "FTC102",
+      "severity": "cant_verify",
+      "location": {"file": "app.py", "line": 11, "column": 12},
+      "function": "page",
+      "route": "/page",
+      "branch": null,
+      "template": null,
+      "variable": null,
+      "reason": "The render target comes from template_name rather than a resolvable literal template name.",
+      "related_locations": [],
+      "dependency_chain": []
+    }
+  ],
+  "summary": {"errors": 0, "warnings": 0, "cant_verify": 1},
+  "exit_code": 0
+}

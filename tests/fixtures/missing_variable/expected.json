@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "complete": true,
+  "findings": [
+    {
+      "code": "FTC001",
+      "severity": "error",
+      "location": {"file": "templates/profile.html", "line": 4, "column": 13},
+      "function": "profile",
+      "route": "/profile",
+      "branch": null,
+      "template": "profile.html",
+      "variable": "display_name",
+      "reason": "Template reads display_name, but the profile render supplies no value for it.",
+      "related_locations": [{"file": "app.py", "line": 10, "column": 12}],
+      "dependency_chain": ["profile.html"]
+    }
+  ],
+  "summary": {"errors": 1, "warnings": 0, "cant_verify": 0},
+  "exit_code": 1
+}

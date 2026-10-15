@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head><title>{{ title }}</title></head>
+  <body>
+    <p>{{ request.path }}</p>
+    <p>{{ session.get("user_id") }}</p>
+    <p>{{ g.request_id }}</p>
+    <p>{{ url_for("context") }}</p>
+    <p>{{ get_flashed_messages() }}</p>
+    <p>{{ current_user }}</p>
+    <p>{{ csrf_token() }}</p>
+    <p>{{ config.ENV }}</p>
+  </body>
+</html>

@@ -5,13 +5,28 @@ to Jinja templates. Frontier Buildathon 2026, Track 02.
 
 ## Status
 
-Steps 1–2: scaffold, immutable shared models, analysis specification, and fixture
-harness. No analyzer or working CLI is implemented yet. The clean fixture's
-expected report is validated as metadata, not claimed as analyzer output.
-A thin end-to-end slice follows only after approval.
+Steps 1–2 plus the first thin end-to-end slice are implemented. The thin slice
+statically finds literal `render_template` calls, compares simple Jinja reads,
+and reports unsupported dependencies conservatively. Deep scope and data-flow
+analysis is not implemented yet.
 
 See [docs/analysis-contract.md](docs/analysis-contract.md) for approved semantics,
 diagnostic codes, future fixture inventory, and explicitly deferred features.
+
+## Thin-slice CLI
+
+```sh
+flask-template-contract path/to/flask-project
+flask-template-contract path/to/flask-project --format json
+flask-template-contract path/to/flask-project --strict
+```
+
+The checker never imports or runs the target application. Literal template
+names, explicit keyword arguments, simple Jinja free reads, Flask's built-in
+globals, and the assumed `current_user`/`csrf_token` globals are supported in
+this slice. Dynamic template names, `**kwargs`, dependency directives, and
+context processors are labelled CAN'T VERIFY. Warnings fail only with
+`--strict`; CAN'T VERIFY never changes the exit code.
 
 ## Setup
 

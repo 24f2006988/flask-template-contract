@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "complete": true,
+  "findings": [
+    {
+      "code": "FTC002",
+      "severity": "warning",
+      "location": {"file": "app.py", "line": 10, "column": 68},
+      "function": "index",
+      "route": "/",
+      "branch": null,
+      "template": "index.html",
+      "variable": "unused_message",
+      "reason": "Render data unused_message is supplied explicitly but is not read by index.html.",
+      "related_locations": [],
+      "dependency_chain": ["index.html"]
+    }
+  ],
+  "summary": {"errors": 0, "warnings": 1, "cant_verify": 0},
+  "exit_code": 0
+}

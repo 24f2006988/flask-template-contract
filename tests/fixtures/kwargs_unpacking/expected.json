@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "complete": false,
+  "findings": [
+    {
+      "code": "FTC101",
+      "severity": "cant_verify",
+      "location": {"file": "app.py", "line": 11, "column": 12},
+      "function": "search",
+      "route": "/search",
+      "branch": null,
+      "template": "search.html",
+      "variable": null,
+      "reason": "Keyword context is unpacked from context, so the supplied render names cannot be verified statically.",
+      "related_locations": [],
+      "dependency_chain": ["search.html"]
+    }
+  ],
+  "summary": {"errors": 0, "warnings": 0, "cant_verify": 1},
+  "exit_code": 0
+}

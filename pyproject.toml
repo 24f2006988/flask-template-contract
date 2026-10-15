@@ -11,6 +11,9 @@ requires-python = ">=3.14,<3.15"
 license = "MIT"
 dependencies = ["Jinja2==3.1.6"]
 
+[project.scripts]
+flask-template-contract = "flask_template_contract.cli:main"
+
 [dependency-groups]
 dev = ["pytest==9.1.1", "hatchling==1.32.4"]
 

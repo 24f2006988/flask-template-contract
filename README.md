@@ -5,9 +5,13 @@ to Jinja templates. Frontier Buildathon 2026, Track 02.
 
 ## Status
 
-Scaffold only. No analyzer or working CLI is implemented yet. The next
-checkpoint defines the data contracts and fixture harness; a thin end-to-end
-slice follows only after approval.
+Steps 1–2: scaffold, immutable shared models, analysis specification, and fixture
+harness. No analyzer or working CLI is implemented yet. The clean fixture's
+expected report is validated as metadata, not claimed as analyzer output.
+A thin end-to-end slice follows only after approval.
+
+See [docs/analysis-contract.md](docs/analysis-contract.md) for approved semantics,
+diagnostic codes, future fixture inventory, and explicitly deferred features.
 
 ## Setup
 
@@ -34,6 +38,12 @@ activated. The equivalent explicit offline invocation is:
 uv run --offline --no-sync python -m pytest -q
 ```
 
+On Linux with namespace privileges, additionally run:
+
+```sh
+unshare -rn uv run --offline --no-sync python -m pytest -q
+```
+
 ## Verify like the judges
 
 ```sh
@@ -43,6 +53,16 @@ docker build -t flask-template-contract . && docker run --rm --network none flas
 The build installs dependencies; container execution requires no network and
 does not sync or download anything. Docker has not yet been verified in the
 development sandbox because Docker is unavailable there.
+
+The Docker build first installs locked dependencies (including Hatchling), then
+builds a non-editable package with build isolation disabled so the locked backend
+environment is reused. It uses no host virtual environment or external files.
+The Python image tag was confirmed in Docker Hub's public tag API; fetching the
+uv GHCR manifest without registry authentication returned 401, so that image pull
+is still unverified. Image tags are version-pinned, not digest-pinned. A real
+Docker build must still verify image availability, registry access, and wheels
+for the target architecture. No compiler or other extra system package is
+currently needed for the tested Linux environment.
 
 ## Run and deploy
 

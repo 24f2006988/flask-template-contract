@@ -11,6 +11,7 @@ COPY pyproject.toml uv.lock .python-version README.md LICENSE ./
 COPY src ./src
 COPY tests ./tests
 COPY docs ./docs
-RUN uv sync --locked --no-editable
+RUN uv sync --locked --no-install-project \
+    && uv sync --locked --no-editable --no-build-isolation
 
 CMD ["python", "-m", "pytest", "-q"]

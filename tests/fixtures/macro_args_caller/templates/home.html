@@ -1,0 +1,1 @@
+{% macro panel(label) %}<section><b>{{ label }}</b>{{ caller() }}</section>{% endmacro %}{% call panel(label) %}{{ body }}{% endcall %}

@@ -1,0 +1,1 @@
+{"schema_version":1,"findings":[{"code":"FTC112","severity":"cant_verify","location":{"file":"app.py","line":4,"column":12},"function":null,"route":null,"branch":null,"template":null,"variable":null,"reason":"Python source syntax cannot be parsed.","related_locations":[],"dependency_chain":[]}],"summary":{"errors":0,"warnings":0,"cant_verify":1},"exit_code":0,"complete":false}

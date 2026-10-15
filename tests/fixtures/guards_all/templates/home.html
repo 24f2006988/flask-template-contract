@@ -1,0 +1,1 @@
+{% if optional is defined %}{{ optional }}{% endif %}{% if absent is not defined %}fallback{% endif %}{{ defaulted|default("x") }}{{ maybe or present }}{% if truthy %}yes{% endif %}

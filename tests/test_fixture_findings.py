@@ -7,6 +7,9 @@ import subprocess
 import sys
 
 import pytest
+from jinja2 import Environment, FileSystemLoader, StrictUndefined, UndefinedError
+
+from flask_template_contract.scanner import scan_project
 
 
 FIXTURES_ROOT = Path(__file__).parent / "fixtures"
@@ -109,3 +112,37 @@ def test_analyzer_findings_match_expected_exactly(fixture_root: Path):
         )
     diff = _finding_diff(expected["findings"], actual["findings"])
     assert not diff, f"{fixture_root.name}: {diff}"
+
+
+@pytest.mark.parametrize("fixture_root", _fixture_directories(), ids=lambda path: path.name)
+def test_ground_truth_for_simple_missing_variables(fixture_root: Path):
+    """Check simple FTC001s against Jinja2 StrictUndefined, without Flask."""
+    expected = json.loads((fixture_root / "expected.json").read_text(encoding="utf-8"))
+    missing = [finding for finding in expected["findings"] if finding["code"] == "FTC001"]
+    if not missing:
+        pytest.skip("fixture has no FTC001 finding")
+    if len(missing) != 1:
+        pytest.skip("multiple missing variables require route-specific rendering")
+
+    finding = missing[0]
+    template_files = list((fixture_root / "templates").rglob("*.html"))
+    source = "\n".join(path.read_text(encoding="utf-8") for path in template_files)
+    if any(token in source for token in ("{% if", "{% macro", "{% call")):
+        pytest.skip("branch or macro semantics need route-aware rendering")
+
+    scan = scan_project(fixture_root)
+    site = next((site for site in scan.render_sites
+                 if finding["template"] in site.template_candidates), None)
+    if site is None:
+        pytest.skip("render site could not be matched")
+    roots = next((roots for scope, roots in scan.template_roots if scope == site.app),
+                 (fixture_root / "templates",))
+    env = Environment(loader=FileSystemLoader([str(path) for path in roots]),
+                      undefined=StrictUndefined)
+    env.globals.update({name: object() for name in (
+        "config", "request", "session", "g", "url_for", "get_flashed_messages",
+        "current_user", "csrf_token", "range", "dict", "lipsum", "cycler", "joiner", "namespace",
+    )})
+    context = {name: object() for name in site.explicit_kwargs}
+    with pytest.raises(UndefinedError, match=f"{finding['variable']}.*undefined"):
+        env.get_template(finding["template"]).render(**context)

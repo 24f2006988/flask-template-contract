@@ -65,6 +65,7 @@ def scan_project(root: Path) -> PythonScan:
         raise ValueError("project root is not a directory")
 
     gaps: list[AnalysisGap] = []
+    unsupported: list[AnalysisGap] = []
     sites: list[RenderSite] = []
     providers: list[ProviderSummary] = []
     apps: dict[str, dict] = {}
@@ -168,6 +169,10 @@ def scan_project(root: Path) -> PythonScan:
                             else:
                                 gaps.append(AnalysisGap(FindingCode.DYNAMIC_PROVIDER, _loc(path, root, node), "Global name is dynamic."))
                 continue
+            if isinstance(node.func, ast.Name) and node.func.id in {"Babel", "Moment", "LoginManager", "Environment"}:
+                unsupported.append(AnalysisGap(
+                    FindingCode.UNSUPPORTED_CUSTOMIZATION, _loc(path, root, node),
+                    f"Unsupported extension or loader customization: {node.func.id}."))
             # Explicit registrations such as app.context_processor(fn), and globals APIs.
             if isinstance(node.func, ast.Attribute) and node.func.attr in {"context_processor", "app_context_processor", "add_template_global"}:
                 if node.args and isinstance(node.args[0], ast.Name) and node.args[0].id in functions:
@@ -245,6 +250,14 @@ def scan_project(root: Path) -> PythonScan:
         ordered = list(dict.fromkeys(ordered))
         roots.append((name, tuple(ordered)))
     sites = [site for site in sites if not (site.function in wrappers and site.function)]
+    if unsupported:
+        gap = unsupported[0]
+        sites = [RenderSite(site.location, function=site.function, routes=site.routes,
+                            app=site.app, blueprint=site.blueprint,
+                            template_candidates=site.template_candidates,
+                            explicit_kwargs=site.explicit_kwargs,
+                            explicit_keyword_locations=site.explicit_keyword_locations,
+                            gaps=site.gaps + (gap,)) for site in sites]
     if len(apps) > 1:
         sites = [RenderSite(site.location, function=site.function, routes=site.routes,
                             app=None, blueprint=site.blueprint,

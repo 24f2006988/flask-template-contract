@@ -87,7 +87,7 @@ def analyze(root: Path, strict: bool = False) -> AnalysisResult:
         for gap in summary.gaps:
             findings.append(Finding(gap.code, Severity.CANT_VERIFY, gap.location, site.function, _route(site),
                 template=candidate_name, reason=gap.reason, dependency_chain=(candidate_name,)))
-        uncertain = bool(summary.gaps) or provider_uncertain or any(g.code in {FindingCode.UNPACKING, FindingCode.WRAPPER, FindingCode.BRANCH_FLOW} for g in site.gaps)
+        uncertain = bool(summary.gaps) or provider_uncertain or bool(site.gaps)
         supplied = set(site.explicit_kwargs) | provider_keys | default_globals
         used = {req.variable for req in summary.requirements}
         if not uncertain:

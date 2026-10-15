@@ -120,6 +120,34 @@ scoped unknowns and traversal continues for independent files and sites.
 | FTC112 | cant_verify | Python source syntax cannot be parsed. |
 | FTC113 | cant_verify | A dependency/inheritance cycle prevents complete resolution. |
 
+### Frozen v1 finding-code table
+
+This table is the only permitted diagnostic vocabulary for Workers A and C.
+
+| Code | Severity | Meaning | One-line trigger example |
+| --- | --- | --- | --- |
+| FTC001 | error | A required template context name is definitely missing at a render site. | `render_template("home.html")` and `home.html` reads `title` unguarded. |
+| FTC002 | warning | Explicit render data is definitely unused by the effective template/dependency graph. | `render_template("home.html", unused=value)` has no reachable use of `unused`. |
+| FTC101 | cant_verify | Unresolved context unpacking can affect supplied keys. | `render_template("home.html", **context)` is encountered. |
+| FTC102 | cant_verify | A render target is dynamic rather than a resolvable literal name/list. | `render_template(template_name)` is encountered. |
+| FTC103 | cant_verify | An unresolved wrapper prevents sound render-call or context attribution. | An unrecognized `render_page(...)` helper performs the render. |
+| FTC104 | cant_verify | Branch-dependent provider or assignment presence cannot be resolved soundly. | A name is passed only on one control-flow branch before rendering. |
+| FTC105 | cant_verify | Jinja template syntax cannot be parsed. | A reachable template contains an unterminated `{% if %}`. |
+| FTC106 | cant_verify | A relevant source or template file cannot be read. | A reachable include file exists but cannot be read. |
+| FTC107 | cant_verify | A referenced template cannot be found in the resolved lookup scope. | `render_template("missing.html")` has no matching searched file. |
+| FTC108 | cant_verify | Multiple plausible template roots or precedence orders cannot be statically resolved. | A target exists in two applicable roots with unresolved precedence. |
+| FTC109 | cant_verify | A context provider has unresolved keys or applicability. | A context processor returns a computed mapping rather than literal keys. |
+| FTC110 | cant_verify | Unsupported Flask/Jinja customization prevents a sound default-semantics conclusion. | A custom loader or extension changes lookup or template semantics. |
+| FTC111 | cant_verify | A template dependency is dynamic or otherwise unresolvable. | `{% include include_name %}` uses a dynamic dependency name. |
+| FTC112 | cant_verify | Python source syntax cannot be parsed. | A relevant `.py` file has an unterminated function definition. |
+| FTC113 | cant_verify | A dependency or inheritance cycle prevents complete resolution. | `base.html` and `child.html` extend each other. |
+
+FTC109 remains active only for provider keys or applicability that are not
+statically knowable; literal returned mapping keys and statically scoped
+registrations are supported. FTC111 remains active only for dynamic,
+unresolvable, or incomplete dependency traversal; literal inheritance, includes,
+and imports are supported subject to the deferred imported-macro-body boundary.
+
 Do not downgrade a definite independent FTC001/FTC002 merely because another
 file has a gap. Conversely, never invent FTC001/FTC002 from incomplete evidence.
 For example, unresolved unpacking can supply a supposedly missing name, so
@@ -159,6 +187,13 @@ emit FTC108, not an arbitrary winner or a union presented as definite. An
 invalid root passed to the tool is exit 2; a missing template referenced inside
 a valid project is FTC107. Relevant Python/template parse and read failures
 produce FTC112/FTC105/FTC106 respectively and do not stop independent analysis.
+
+For v1, each app's ordered lookup roots are its app template folder first,
+followed by blueprint template folders in blueprint registration order. The
+ordered roots are an input contract to template analysis. If the same template
+name exists in more than one searched root, the target is an ambiguous collision
+and receives FTC108 rather than silently selecting a root. This applies to
+render targets and to `extends`/`include` dependencies.
 
 ### Context providers and defaults
 
@@ -210,6 +245,10 @@ FTC001. **`if x` is not an explicit definedness guard**: evaluating the test is
 a read, and v1 treats it as required. Do not equate truthiness tests with
 `is defined`. Branches and short-circuit expressions must not accidentally
 protect unrelated names.
+
+Every recorded template use retains a `guarded` flag. Guarded uses cannot
+produce FTC001, but they are still uses: any guarded or unguarded use prevents
+FTC002 for that variable at the render site.
 
 ### Effective templates
 

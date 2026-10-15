@@ -88,12 +88,15 @@ class RenderSite:
     branch: str | None = None
     template_candidates: tuple[str, ...] = ()
     explicit_kwargs: frozenset[str] = frozenset()
+    explicit_keyword_locations: tuple[tuple[str, SourceLocation], ...] = ()
     gaps: tuple[AnalysisGap, ...] = ()
 
     def __post_init__(self) -> None:
         _freeze(self, routes=tuple(self.routes),
                 template_candidates=tuple(self.template_candidates),
-                explicit_kwargs=frozenset(self.explicit_kwargs), gaps=tuple(self.gaps))
+                explicit_kwargs=frozenset(self.explicit_kwargs),
+                explicit_keyword_locations=tuple(self.explicit_keyword_locations),
+                gaps=tuple(self.gaps))
 
 
 @dataclass(frozen=True)
@@ -114,6 +117,7 @@ class ProviderSummary:
 class TemplateRequirement:
     variable: str
     required: bool = True
+    guarded: bool = False
     location: SourceLocation | None = None
     dependency_chain: tuple[str, ...] = ()
 
@@ -122,6 +126,8 @@ class TemplateRequirement:
             raise ValueError("variable must not be empty")
         if type(self.required) is not bool:
             raise ValueError("required must be a boolean")
+        if type(self.guarded) is not bool:
+            raise ValueError("guarded must be a boolean")
         _freeze(self, dependency_chain=tuple(self.dependency_chain))
 
     @property

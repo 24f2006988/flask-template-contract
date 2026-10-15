@@ -318,6 +318,12 @@ literal render calls to simple templates and has subprocess exit-code tests for
 the seven initial fixtures. The reader is intentionally temporary and is not a
 claim of deep Jinja correctness.
 
+In code, this is explicitly marked `TEMPORARY`: `Environment.parse` plus
+`jinja2.meta.find_undeclared_variables` supplies simple free-name reads. It is
+not yet the final scope-aware `jinja2.nodes` walker. Dependency directives and
+context processors therefore produce scoped CAN'T VERIFY findings rather than
+guessed errors or warnings.
+
 Defer these beyond the current checkpoint and avoid implied support:
 
 - Symlink and path-traversal handling/policy.

@@ -4,11 +4,9 @@
 
 `flask-template-contract` is an MIT-licensed, deterministic, offline static
 checker for Flask-to-Jinja context contracts. This checkpoint implements the
-**scaffold, shared models, fixture harness, and a first thin end-to-end slice**.
-The thin slice uses the temporary Jinja meta reader described below; deep scope,
-inheritance, include, import, and data-flow analysis remain later work. All
-analysis behavior below is a specification unless explicitly marked implemented
-in the fixture matrix.
+shared models, AST-based Python scanner, scope-aware Jinja analyzer, fixture
+harness, and CLI integration. Analysis behavior below is the v1 specification;
+items explicitly listed under Later work remain deferred.
 
 The pinned toolchain is Python **3.14.8**, uv **0.13.1**, Jinja **3.1.6**
 (the `Jinja2` distribution), pytest **9.1.1**, and hatchling **1.32.4**.

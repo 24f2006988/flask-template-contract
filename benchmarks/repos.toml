@@ -1,0 +1,119 @@
+[[repos]]
+name = "pallets/flask"
+url = "https://github.com/pallets/flask.git"
+commit = "d086db856be187255b8ec61ef409357393020f32"
+license = "BSD-3-Clause"
+stars = 74901
+why = "The Flask reference repository includes maintained example applications and templates using render_template."
+
+[[repos]]
+name = "miguelgrinberg/microblog"
+url = "https://github.com/miguelgrinberg/microblog.git"
+commit = "a975ef64864354867c88e0ed3a17ba7d17dca752"
+license = "MIT"
+stars = 4776
+why = "A maintained Flask tutorial application with routes, Jinja templates, and real context contracts."
+
+[[repos]]
+name = "miguelgrinberg/flasky"
+url = "https://github.com/miguelgrinberg/flasky.git"
+commit = "3beedd640b9146b0bd65c8c2ecf402b01798bc33"
+license = "MIT"
+stars = 8739
+why = "A well-known Flask Mega-Tutorial application with substantial route and template coverage."
+
+[[repos]]
+name = "miguelgrinberg/flask-video-streaming"
+url = "https://github.com/miguelgrinberg/flask-video-streaming.git"
+commit = "bcc4b77b4b63a1c39be1e754708a2284034f06de"
+license = "MIT"
+stars = 1420
+why = "A focused real Flask application with template-backed views and a small reproducible surface."
+
+[[repos]]
+name = "cookiecutter-flask/cookiecutter-flask"
+url = "https://github.com/cookiecutter-flask/cookiecutter-flask.git"
+commit = "e5666c23a633b5b6fcb0dc2cfda2441d7f885727"
+license = "MIT"
+stars = 4726
+why = "A widely used Flask application template containing representative routes, providers, and Jinja templates."
+
+[[repos]]
+name = "greyli/albumy"
+url = "https://github.com/greyli/albumy.git"
+commit = "dfb591fd50bcd54431dacde54dad5579287556b6"
+license = "MIT"
+stars = 305
+why = "A complete Flask photo application with blueprint-oriented template-backed views."
+
+[[repos]]
+name = "helloflask/flask-examples"
+url = "https://github.com/helloflask/flask-examples.git"
+commit = "8d35d2dcb24e41c56d859f0aca0f7cc496d3151e"
+license = "MIT"
+stars = 234
+why = "A curated collection of small Flask examples, useful for breadth across common patterns."
+
+[[repos]]
+name = "realpython/flask-boilerplate"
+url = "https://github.com/realpython/flask-boilerplate.git"
+commit = "488e33624bf0236fc16358d9e8cd66590e0e89ee"
+license = "Apache-2.0"
+stars = 1577
+why = "A popular Flask boilerplate with a conventional application and Jinja template layout."
+
+[[repos]]
+name = "CoreyMSchafer/code_snippets"
+url = "https://github.com/CoreyMSchafer/code_snippets.git"
+commit = "c6969cfffca4c0de836453571bb4831451b76a75"
+license = "MIT"
+stars = 10611
+why = "A widely used educational repository containing a Flask blog application and templates."
+
+[[repos]]
+name = "pallets-eco/flask-admin"
+url = "https://github.com/pallets-eco/flask-admin.git"
+commit = "4f8be4580b082c6047492baa801f3f08642c9a75"
+license = "BSD-3-Clause"
+stars = 6068
+why = "A mature Flask extension repository with template-backed example applications."
+
+[[repos]]
+name = "miguelgrinberg/flask-celery-example"
+url = "https://github.com/miguelgrinberg/flask-celery-example.git"
+commit = "76f785ebe6a049e873a8c28b4f25686b64c4fa55"
+license = "MIT"
+stars = 1210
+why = "A recognized Flask integration example with a template-backed web surface."
+
+[[repos]]
+name = "gouthambs/Flask-Blogging"
+url = "https://github.com/gouthambs/Flask-Blogging.git"
+commit = "f11ea155e59a284f2bc7df30db15f1183d41fedb"
+license = "MIT"
+stars = 700
+why = "A public Flask blogging application with routes and rendered pages."
+
+[[repos]]
+name = "dmaslov/flask-blog"
+url = "https://github.com/dmaslov/flask-blog.git"
+commit = "555003ac62e456b73bdd485ac5b3cb100e988f17"
+license = "MIT"
+stars = 420
+why = "A small real Flask blog application suitable for transparent route/template review."
+
+[[repos]]
+name = "DogukanUrker/FlaskBlog"
+url = "https://github.com/DogukanUrker/FlaskBlog.git"
+commit = "0b1ae226a4ae3f14b5079f1ca90e2c0350e1846c"
+license = "MIT"
+stars = 195
+why = "A public Flask blog sample with Jinja templates and conventional render_template usage."
+
+[[repos]]
+name = "frostming/Flog"
+url = "https://github.com/frostming/Flog.git"
+commit = "a68025cf2e36bdce5fcbdec40d5d7b12b5cd4d21"
+license = "MIT"
+stars = 194
+why = "A small public Flask blogging project with a manageable template-backed application."

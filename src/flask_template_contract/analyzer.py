@@ -188,7 +188,8 @@ def analyze(root: Path, strict: bool = False) -> AnalysisResult:
             try:
                 template_line = next(i for i, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1)
                                      if variable in line)
-                template_column = path.read_text(encoding="utf-8").splitlines()[template_line - 1].find(variable) + 1
+                line_text = path.read_text(encoding="utf-8").splitlines()[template_line - 1]
+                template_column = line_text.find("{{") + 2
             except (StopIteration, OSError):
                 template_line, template_column = 1, 1
             findings.append(Finding(FindingCode.MISSING_VARIABLE, Severity.ERROR,
